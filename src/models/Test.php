@@ -279,8 +279,13 @@ class Test extends Controller {
             "buttons" => array(
                 "0" => array("rota", "Label do Botão", "icone"),
             ),
-            "columns" => array("COLUNAS", "COLUNAS",  "COLUNAS", "COLUNAS", "BTN"),
-            "rows" => $array
+            "table_columns" => array("COLUNAS", "COLUNAS",  "COLUNAS", "COLUNAS", "BTN"),
+            "table_rows" => $array,
+            "btn_router" => array(
+                "1" => "edit",
+                "2" => "print",
+                "3" => "delete"
+            )
         );
 
         return $arrayTable;

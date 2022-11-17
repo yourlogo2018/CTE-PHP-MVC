@@ -3,6 +3,11 @@ use core\Router;
 
 $router = new Router();
 
+//Home
+$router->get('/', 'HomeController@index');
+// $router->get('/sobre/{nome}', 'HomeController@sobreP');
+// $router->get('/sobre', 'HomeController@sobre');
+
 //Login
 $router->get('/login', 'UsuarioController@login');
 $router->post('/action_login', 'UsuarioController@action_login');
@@ -15,26 +20,20 @@ $router->post('/action_forgot_password', 'UsuarioController@action_forgot_passwo
 $router->get('/register', 'UsuarioController@register');
 $router->post('/action_register', 'UsuarioController@action_register');
 
-//Home
-$router->get('/', 'HomeController@index');
-// $router->get('/sobre/{nome}', 'HomeController@sobreP');
-// $router->get('/sobre', 'HomeController@sobre');
 
 // //User
 // $router->get('/users', 'UsuarioController@user');
 // $router->post('/register_users', 'HomeController@register');
 
 
-// //Produtos
-// $router->get('/produtos', 'HomeController@prod');
-// $router->post('/register_product', 'HomeController@register_product');
-
 //Administrativo
 $router->get('/escola', 'EscolaController@escola');
 
 //Cursos
-$router->get('/listar_cursos', 'CursosController@listar_cursos');
 $router->get('/cursos', 'CursosController@cursos');
+$router->get('/listar_cursos', 'CursosController@listar_cursos');
+$router->get('/editar_curso', 'CursosController@editar_curso');
+$router->post('/deletar_curso', 'CursosController@deletar_curso');
 $router->post('/cadastrar_curso', 'CursosController@cadastrar_curso');
 
 

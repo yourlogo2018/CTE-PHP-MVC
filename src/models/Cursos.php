@@ -75,8 +75,12 @@ class Cursos extends Controller {
             "buttons" => array(
                 "0" => array("cursos", "Novo Curso", "fa-solid fa-plus"),
             ),
-            "columns" => array("ID", "NOME CURSO",  "QTD DISC", "CARGA HOR", "BTN"),
-            "rows" => $arrayCursos
+            "table_columns" => array("ID", "NOME CURSO",  "QTD DISC", "CARGA HOR", "BTN"),
+            "table_rows" => $arrayCursos,
+            "btn_router" => array(
+                "1" => "editar_curso",
+                "3" => "deletar_curso"
+            )
         );
 
         return $arrayTable;

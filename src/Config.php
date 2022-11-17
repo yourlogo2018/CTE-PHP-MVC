@@ -2,13 +2,13 @@
 namespace src;
 
 class Config {
-    const BASE_DIR = '/cte/public';
+    const BASE_DIR = '/CTE-PHP-MVC/public';
 
     const DB_DRIVER = 'mysql';
-    const DB_HOST = 'localhost';
-    const DB_DATABASE = 'cte';
-    CONST DB_USER = 'root';
-    const DB_PASS = '';
+    const DB_HOST = '209.145.49.19';
+    const DB_DATABASE = 'kafecomc_cte';
+    CONST DB_USER = 'kafecomc_cte';
+    const DB_PASS = 'casa102030';
 
     const ERROR_CONTROLLER = 'ErrorController';
     const DEFAULT_ACTION = 'index';

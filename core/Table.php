@@ -53,10 +53,10 @@ class Table
               <div class="card-body">
                 <table class="table table-hover text-nowrap">
                   <thead>
-                    '.self::createColums($array["columns"]).'
+                    '.self::createColums($array["table_columns"]).'
                   </thead>
                   <tbody>
-                    '.self::createRow($array["rows"]).'
+                    '.self::createRow($array["table_rows"], $array["btn_router"]).'
                   </tbody>
                 </table>
               </div>
@@ -143,39 +143,64 @@ class Table
      * @param [type] $array
      * @return void
      */
-    static function createRow($array){
+    static function createRow($arrayRows, $arrayRouters){
 
-        $row = "";
-        
-        foreach ($array as $key => $value) {
+      $row = "";
+      
+      foreach ($arrayRows as $key => $value) {
 
-          $row .= "<tr>";
+        $row .= "<tr>";
 
-          foreach ($value as $k => $v) {
-            $row .= '
-              <td>'.$v.'</td>
-            ';
-            
-          }
+        foreach ($value as $k => $v) {
           $row .= '
-          <td>
-            <div class="btn-group">
-              <a class="btn btn-sm btn-default" href="'.self::baseUrl().'/editar/'.$value["id"].'">
-                <i class="fa-solid fa-pen-to-square"></i>
-              </a>
-              <a class="btn btn-sm btn-default" href="'.self::baseUrl().'/deletar/'.$value["id"].'">
-                <i class="fa-solid fa-trash"></i>
-              </a>
-            </div>
-          </td>';
+            <td>'.$v.'</td>
+          ';
           
-          $row .= "</tr>";
-
         }
 
-        return $row; 
+        $row .= '<td>
+          <div class="btn-group">';
 
-    }
+        foreach ($arrayRouters as $kr => $vr) {
+
+            switch ($kr) {
+              case 1:
+                  $icon = '<i class="fa-solid fa-pen-to-square"></i>';
+                break;
+
+              case 2:
+                  $icon = '<i class="fa-solid fa-print"></i>';
+                break;
+
+              case 3:
+                  $icon = '<i class="fa-solid fa-trash"></i>';
+                break;
+              
+              default:
+                # code...
+                break;
+            }
+
+
+          $row .= '
+            
+              <a class="btn btn-sm btn-default" href="'.self::baseUrl().'/'.$vr.'/'.$value["id"].'">
+                '.$icon.'
+              </a>
+              
+            ';
+        }
+
+        $row .= '</div>
+        </td>';
+        
+        $row .= "</tr>";
+
+      }
+
+      return $row; 
+
+  }
 
 
 
