@@ -79,6 +79,14 @@ class CursosController extends Controller
 
     }
 
+    public function editar_curso($id){
+
+        $this->render("editar_curso", [
+            "formulario_editar" => Forms::createForm("Editar Curso", "editar_curso", "POST", "12", Cursos::editarCurso($id["id"]), "listar_cursos"),
+        ]);
+
+    }
+
 
 
 

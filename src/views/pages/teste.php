@@ -1,7 +1,11 @@
 <?php 
-$render('header'); 
+$_SESSION["header"] = "Teste";
 
-// echo $variavel;
+$render('header', [
+    "rota" => "rota"
+]); 
+
+echo $formulario_cursos;
 
 $render('footer'); 
 ?>
