@@ -212,6 +212,7 @@ class UsuarioController extends Controller
     /**
      * Metodo para validação da sessão do usuario
      * se estiver vazia sempre redireciona para o /login
+     * teste
      *
      * @param [array] $sessaoUsuario
      * @return void
