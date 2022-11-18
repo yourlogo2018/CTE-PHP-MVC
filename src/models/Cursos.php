@@ -85,6 +85,23 @@ class Cursos extends Controller {
 
         return $arrayTable;
     }
+
+    static function editarCurso($id){
+
+        $array = Model::select("*", "WHERE id = '".$id."' ", "ctec_cursos");
+
+         //Formulário cadastrar cursos
+         $arrayForm = array(
+            "0" => array("nome_curso", "Nome do Curso *", "text", "", $array[0]["curso_nome"], "required"),
+            "1" => array("nome_certificado", "Nome p/ Certificado *", "text", "", $array[0]["curso_nome_certificado"], "required"),
+            "2" => array("qtd_disciplina", "Qtd. Disciplina *", "number", "", $array[0]["curso_quant_disc"], "required"),
+            "3" => array("qtd_horas", "Carga Horária Total", "text", "", $array[0]["curso_carga_horaria"], ""),
+            "4" => array("ementa", "Ementa", "textarea", "", $array[0]["curso_ementa"], ""),
+        );
+
+        return $arrayForm;
+
+    }
   
 
 

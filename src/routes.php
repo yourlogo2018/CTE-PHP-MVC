@@ -32,8 +32,8 @@ $router->get('/escola', 'EscolaController@escola');
 //Cursos
 $router->get('/cursos', 'CursosController@cursos');
 $router->get('/listar_cursos', 'CursosController@listar_cursos');
-$router->get('/editar_curso', 'CursosController@editar_curso');
-$router->post('/deletar_curso', 'CursosController@deletar_curso');
+$router->get('/editar_curso/{id}', 'CursosController@editar_curso');
+$router->post('/deletar_curso/{id}', 'CursosController@deletar_curso');
 $router->post('/cadastrar_curso', 'CursosController@cadastrar_curso');
 
 
