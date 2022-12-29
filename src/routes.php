@@ -37,6 +37,10 @@ $router->post('/deletar_curso/{id}', 'CursosController@deletar_curso');
 $router->post('/cadastrar_curso', 'CursosController@cadastrar_curso');
 
 
+//Acadêmico 
+$router->get('/estudante', 'CursosController@estudante');
+
+
 //TESTE
 // $router->get('/', 'NomeController@função');//Rota home
 // $router->get('/rota', 'NomeController@função');
