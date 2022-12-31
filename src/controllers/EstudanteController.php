@@ -7,6 +7,12 @@ use src\models\Estudante;
 
 class EstudanteController extends Controller{
 
+    public function estudante($params){
 
+        $estudante = Estudante::AddAlunos($params);
+        $this -> render('estudante',[
+            'estudante' => $estudante
+        ]);
+    }
     
 }
