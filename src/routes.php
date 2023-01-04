@@ -39,6 +39,10 @@ $router->post('/cadastrar_curso', 'CursosController@cadastrar_curso');
 
 //Acadêmico 
 $router->get('/estudante', 'EstudanteController@estudante');
+$router->get('/consul_alunos', 'EstudanteController@consul_alunos');
+$router->get('/report_alunos', 'EstudanteController@report_alunos');
+$router->get('/record_alunos', 'EstudanteController@record_alunos');
+
 
 
 //TESTE
