@@ -38,7 +38,7 @@ class Database
             $statement->execute($params);
             return $statement;
         } catch (\PDOException $e) {
-            //echo 'ERROR: ' . $e->getMessage();
+            echo 'ERROR: ' . $e->getMessage();
             return false;
         }
     }

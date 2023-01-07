@@ -9,9 +9,8 @@ class EstudanteController extends Controller{
 //Função para renderizar a página de cadastro de estudantes
     public function estudante($params){
 
-        $estudante = Estudante::addAlunos($params['nucleoid']);
         $this -> render('estudante',[
-            'estudante' => $estudante
+            'formulario' => Estudante::addAlunos()
         ]);
     }
 
