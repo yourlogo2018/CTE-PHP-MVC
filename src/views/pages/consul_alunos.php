@@ -1,7 +1,7 @@
 <?php 
 $render('header'); 
 
-echo 'deu certo?:';
+echo $consul_alunos;
 
 $render('footer'); 
 ?>
