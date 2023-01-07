@@ -93,31 +93,31 @@ class Estudante extends Model {
          <div class="row g-3">
             <div class="col-md-4">
             <label class="form-label">CEP</label>
-               <input type="text" class="form-control" name="cep" id="cep" onblur="pesquisacep(this.value);" placeholder=""  >
+               <input type="text" class="form-control" name="alunoendcep" id="cep" onblur="pesquisacep(this.value);" placeholder=""  >
             </div>
             <div class="col-md-4">
                <label class="form-label">Endereço</label>
-               <input type="text" name="rua" id="rua" class="form-control  placeholder=""  >
+               <input type="text" name="alunoendlogr" id="rua" class="form-control  placeholder=""  >
             </div>
             <div class="col-md-4">
                <label class="form-label">Nº</label>
-               <input type="text" name="numero" class="form-control  placeholder=""   >
+               <input type="text" name="alunoendnum" class="form-control  placeholder=""   >
             </div>
             <div class="col-md-4">
                <label class="form-label">Bairro</label>
-               <input type="text" name="bairro" id="bairro" class="form-control" placeholder="" >
+               <input type="text" name="alunoendbairro" id="bairro" class="form-control" placeholder="" >
             </div>
             <div class="col-md-4">
                <label class="form-label">Complemento</label>
-               <input type="text" name="complemento" class="form-control" placeholder=""  >
+               <input type="text" name="alunoendcompl" class="form-control" placeholder=""  >
             </div>
             <div class="col-md-4">
                <label class="form-label">Cidade</label>
-               <input type="text" name="cidade" id="cidade" class="form-control" placeholder="" >
+               <input type="text" name="alunoendmun" id="cidade" class="form-control" placeholder="" >
             </div>
             <div class="col-md-4">
                <label class="form-label">Estado</label>
-               <input type="text"  name="uf" id="uf" class="form-control" placeholder=""  >
+               <input type="text"  name="alunoenduf" id="uf" class="form-control" placeholder=""  >
             </div>
             </div>
             <div class="pt-4">
