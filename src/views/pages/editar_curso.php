@@ -2,7 +2,7 @@
 $_SESSION["header"] = "Editar Curso";
 
 $render('header', [
-    "rota" => "editar_curso"
+    "rota" => "editar"
 ]); 
 
 
