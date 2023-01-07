@@ -96,25 +96,25 @@ switch ($_SESSION["rota"]) {
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="<?php echo $base ?>/estudante" class="nav-link <?php echo $admin ?? "" ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cadastrar Alunos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/flot.html" class="nav-link">
+                <a href="<?php echo $base ?>/consul_alunos" class="nav-link <?php echo $admin ?? "" ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Consultar Alunos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/inline.html" class="nav-link">
+                <a href="<?php echo $base ?>/report_alunos" class="nav-link <?php echo $admin ?? "" ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Relatório de Alunos</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/uplot.html" class="nav-link">
+                <a href="<?php echo $base ?>/record_alunos" class="nav-link <?php echo $admin ?? "" ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ficha de Aluno</p>
                 </a>
