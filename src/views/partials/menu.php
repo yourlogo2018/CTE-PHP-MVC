@@ -71,6 +71,12 @@ switch ($_SESSION["rota"]) {
               </p>
             </a>
             <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="<?php echo $base ?>/nova_escola" class="nav-link <?php echo $admin ?? "" ?>">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cadastro de Escola</p>
+                </a>
+              </li>
               <li class="nav-item">
                 <a href="<?php echo $base ?>/listar_cursos" class="nav-link <?php echo $admin ?? "" ?>">
                   <i class="far fa-circle nav-icon"></i>

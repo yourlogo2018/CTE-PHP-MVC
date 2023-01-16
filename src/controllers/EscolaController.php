@@ -7,15 +7,18 @@ use src\models\Escola;
 
 class EscolaController extends Controller
 {
-    public function escola(){
+    public function nova_escola(){
 
         //Formuario de add escola
-        $this->render('escola', [
-            //'escola' => Forms::createForm("Cadastro Escola", "add_escola", "POST", "4", Escola::formAddEscola()),
-            //'steps' => Forms::steps(Escola::liSteps(), Escola::formAddEscola()),
-            //'array' => Escola::formAddEscola(),
-            'formulario' => Forms::createCardMultipleForms(Escola::formAddEscola(), ""),
-        ]);
+        $this->render('nova_escola');
+
+    }
+
+
+    public function add_escola(){
+
+        $data = filter_input_array(INPUT_POST, $_POST, FILTER_DEFAULT);
+        var_dump($data );
 
     }
 }
