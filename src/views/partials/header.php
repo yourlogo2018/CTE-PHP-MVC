@@ -56,6 +56,6 @@ $_SESSION["rota"] = $rota;
 
      
   <?php
-    print_r($_SESSION['user']);
+    // print_r($_SESSION['user']);
     
   ?>
