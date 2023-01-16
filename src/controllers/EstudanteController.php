@@ -29,11 +29,10 @@ class EstudanteController extends Controller{
     }
 
 
-//Função para renderizar a página de consultar alunos
-    public function consul_alunos(){
+    //Função para renderizar a página de consultar alunos
+    public function consultar_alunos(){
 
-   
-        $this -> render('consul_alunos',[
+        $this -> render('consultar_alunos',[
            'consul_alunos' => Estudante::consultAlunos()
          ]);
     }

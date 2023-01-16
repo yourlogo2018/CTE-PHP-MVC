@@ -108,7 +108,7 @@ switch ($_SESSION["rota"]) {
                 </a>
               </li>
               <li class="nav-item">
-                <a href="<?php echo $base ?>/consul_alunos" class="nav-link <?php echo $admin ?? "" ?>">
+                <a href="<?php echo $base ?>/consultar_alunos" class="nav-link <?php echo $admin ?? "" ?>">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Consultar Alunos</p>
                 </a>
