@@ -238,11 +238,11 @@ $render('header');
       <div class="row g-3">
          <div class="col-md-4">
             <label class="form-label">CEP</label>
-            <input type="text" class="form-control" name="" id="cep" onblur="pesquisacep(this.value);" placeholder=""  >
+            <input type="text" class="form-control" name="alunoendcep" id="cep" onblur="pesquisacep(this.value);" placeholder=""  >
          </div>
          <div class="col-md-4">
             <label class="form-label">Endereço</label>
-            <input type="text" name="" id="rua" class="form-control"  placeholder=""  >
+            <input type="text" name="alunoendlogr" id="rua" class="form-control"  placeholder=""  >
          </div>
          <div class="col-md-4">
             <label class="form-label">Nº</label>
@@ -250,7 +250,7 @@ $render('header');
          </div>
          <div class="col-md-4">
             <label class="form-label">Bairro</label>
-            <input type="text" name=""  id="bairro" class="form-control" placeholder="" >
+            <input type="text" name="alunoendbairro"  id="bairro" class="form-control" placeholder="" >
          </div>
          <div class="col-md-4">
             <label class="form-label">Complemento</label>
