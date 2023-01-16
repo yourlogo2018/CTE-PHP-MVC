@@ -17,7 +17,6 @@
 <script>
   $.widget.bridge('uibutton', $.ui.button)
 
-functio
 </script>
 
 <?php
