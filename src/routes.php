@@ -36,12 +36,16 @@ $router->get('/editar_curso/{id}', 'CursosController@editar_curso');
 $router->post('/deletar_curso/{id}', 'CursosController@deletar_curso');
 $router->post('/cadastrar_curso', 'CursosController@cadastrar_curso');
 
+//Escola
+$router->get('/nova_escola', 'EscolaController@nova_escola');
+$router->post('/add_escola', 'EscolaController@add_escola');
 
 //Acadêmico 
 $router->get('/estudante', 'EstudanteController@estudante');
 $router->get('/consul_alunos', 'EstudanteController@consul_alunos');
 $router->get('/report_alunos', 'EstudanteController@report_alunos');
 $router->get('/record_alunos', 'EstudanteController@record_alunos');
+
 
 
 
