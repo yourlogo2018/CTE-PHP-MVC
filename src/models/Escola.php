@@ -7,6 +7,11 @@ use \core\Forms;
 class Escola extends Model
 {
 
+    static function addNovaEscola($array){
+
+        //Select para salvar os dados da nova escola
+
+    }
 
 
 

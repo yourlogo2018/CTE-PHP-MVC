@@ -17,8 +17,8 @@ class EscolaController extends Controller
 
     public function add_escola(){
 
-        $data = filter_input_array(INPUT_POST, $_POST, FILTER_DEFAULT);
-        var_dump($data );
+        $data = filter_input_array(INPUT_POST, $_POST, FILTER_DEFAULT);   
+        $r = Escola::addNovaEscola($data);
 
     }
 }

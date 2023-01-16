@@ -134,13 +134,13 @@ $render('header', [
                     <div class="col-sm-3">
                         <div class="form-group">
                             <label for="exampleInputEmail1">CEP</label>
-                            <input type="text" class="form-control" name="cep" >
+                            <input type="text" class="form-control" name="cep" id="cep"  onblur="pesquisacep(this.value);">
                         </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Endereço</label>
-                            <input type="text" class="form-control" name="endereco" >
+                            <input type="text" class="form-control" name="endereco" id="rua">
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -154,7 +154,7 @@ $render('header', [
                     <div class="col-sm-4">
                         <div class="form-group">
                             <label for="exampleInputEmail1">Bairro</label>
-                            <input type="text" class="form-control" name="bairro" >
+                            <input type="text" class="form-control" name="bairro" id="bairro">
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -166,13 +166,13 @@ $render('header', [
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Municipio</label>
-                            <input type="text" class="form-control" name="municipio" >
+                            <input type="text" class="form-control" name="municipio" id="cidade">
                         </div>
                     </div>
                     <div class="col-sm-2">
                         <div class="form-group">
                             <label for="exampleInputPassword1">Estado</label>
-                            <input type="text" class="form-control" name="estado" >
+                            <input type="text" class="form-control" name="estado" id="uf">
                         </div>
                     </div>
                </div>
