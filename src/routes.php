@@ -39,7 +39,9 @@ $router->post('/cadastrar_curso', 'CursosController@cadastrar_curso');
 
 //Acadêmico 
 $router->get('/estudante', 'EstudanteController@estudante');
+$router->post('/add_alunos', 'EstudanteController@add_alunos');
 $router->get('/consul_alunos', 'EstudanteController@consul_alunos');
+$router->get('/action_pesq_alunos/{id}', 'EstudanteController@action_pesq_alunos');
 $router->get('/report_alunos', 'EstudanteController@report_alunos');
 $router->get('/record_alunos', 'EstudanteController@record_alunos');
 
